@@ -9,6 +9,7 @@ import 'firebase/messaging';
 import 'firebase/storage';
 import KeynoteSpeaker from '../components/KeynoteSpeaker';
 import HomeChallengeCard from '../components/HomeChallengeCard';
+import Image from 'public/CometHackLogos/Comet_Hack_Logo.png';
 
 /**
  * The home page.
@@ -131,8 +132,8 @@ export default function Home(props: {
           className="max-w-4xl mx-auto flex flex-col justify-center items-center"
         >
           <div
-            className="min-w-[280px] w-8/12 h-[240px] flex flex-col justify-center relative md:mb-28 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent before:border-b-4 before:border-l-4 before:border-black
-          after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent after:border-t-4 after:border-r-4 after:border-black"
+          //   className="min-w-[280px] w-8/12 h-[240px] flex flex-col justify-center relative md:mb-28 md:min-w-full before:block before:absolute before:bottom-0 before:left-0 before:w-16 before:h-16 before:bg-transparent before:border-b-4 before:border-l-4 before:border-black
+          // after:block after:absolute after:top-0 after:right-0 after:w-16 after:h-16 after:bg-transparent after:border-t-4 after:border-r-4 after:border-black"
           >
             <h1 className="text-center md:text-6xl text-3xl md:font-black font-bold">
               Comet Hack Portal
@@ -140,6 +141,8 @@ export default function Home(props: {
             <p className="text-center my-4 md:font-bold md:text-3xl text-xl">
               A Project by Comet Hack & IEEE
             </p>
+            {/* <img src= {window.location.origin + 'C:\Users\13168\Documents\GitHub\CometHackHackPortal\public\CometHackLogos.png'} height = {100}></img> */}
+            {/* <img src={Image} height={450}></img> */}
           </div>
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
         </div>

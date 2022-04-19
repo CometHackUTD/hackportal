@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_app.tsx"
-  ],
+, ".d.ts"  ],
   "exclude": [
     "node_modules"
   ]
