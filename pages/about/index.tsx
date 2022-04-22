@@ -47,67 +47,63 @@ export default function AboutPage({ fetchedMembers }: { fetchedMembers: TeamMemb
   }
 
   return (
-    <div className="flex flex-col flex-grow bg-blue">
+    <div className="flex flex-col flex-grow bg-Powderblue">
       <Head>
         <title>HackPortal - About</title>
         <meta name="description" content="HackPortal's About Page" />
       </Head>
       <AboutHeader active="/about" />
       <div className="top-6 p-4 flex flex-col gap-y-3">
-        <h4 className="font-bold text-3xl">Our Mission Statement</h4>
+        <h4 className="font-bold text-4xl">Our Mission Statement</h4>
         <p>
-          As Future engineers, wer are expected to set the pace of tecknological advancements. Yet,
-          we are often lost in space looking for starting point. Comet Hack is dedicated to
-          providing the resources and opportunities to fuel our innovative spirits and creative
-          ideas through the virtual environment.
+          As Future engineers, we are expected to set the pace of technological advancements. Yet we
+          are often lost in space looking for a starting point. Comet Hack is dedicated to providing
+          the resources and opportunities to fuel our innovative spirits and creative ideas.
         </p>
       </div>
       <div className="top-6 p-4 flex flex-col gap-y-3">
-        <div className="flex flex-col flex-grow bg-white">
-          <h5>What is Comet Hack?</h5>
+        <div className="flex flex-col flex-grow bg-Powderblue">
+          <h5 className="font-bold  text-2xl">What is Comet Hack?</h5>
           <div className="flex flex-row items-left gap-x-2">
             <p>
-              Simply put, hackathons combine the two words: hacking and marathon. Participants will
-              form teams of 1-3 members and bring a project idea to life in 36 hours! Students will
-              receive mentorship, learn about new job opportunities, and compete for some cool
-              prizes!
+              Simply hackathons combine the two words: hacking and marathon. Participants will form
+              teams of 1-5 members and bring a project idea to life in 36 hours! Students will
+              receive mentorship, learn about new job opportunities, and compete for a cool prize!
             </p>
           </div>
         </div>
       </div>
 
       <div className="top-6 p-4 flex flex-col gap-y-3">
-        <div className="flex flex-col flex-grow bg-white">
-          <h3>Why Should You Attend?</h3>
+        <div className="flex flex-col flex-grow bg-Powderblue">
+          <h3 className="font-bold  text-2xl">Why Should You Attend?</h3>
           <div className="flex flex-row items-center gap-x-2">
             <p>
-              There are too many reasons! Create bonds and have unforgettable memories with friends
-              from all over the country or even the world. Meet with large companies and inspiring
-              startups that are looking for talented students like you. Attend fun-packed
-              festivities to make friends and de-stress. Learn how to transfer your skills to
-              industry or academia. Work on amazing hacks with help from your peers and mentors. And
-              of course, compete to win $4000 in prizes ranging from airpods to Nintendo Switches!
+              There are too many reasons! Create bonds and have unforgettable memories with friends.
+              Attend fun-packed festivities to make friends and de-stress. Learn how to transfer
+              your skills to industry or academia. Work on amazing hacks with help from your peers
+              and mentors. Build your resume by adding experience and extracurricular activities!
             </p>
           </div>
         </div>
       </div>
 
-      <div className="top-6 p-4 flex flex-col gap-y-3">
-        <div className="flex flex-col flex-grow bg-white">
+      {/* <div className="top-6 p-4 flex flex-col gap-y-3">
+        <div className="flex flex-col flex-grow bg-Powderblue">
           <h3>Will there be reimbursement for hardware?</h3>
           <p>
             Yes, each team will have a limited amount of funds to spend on their hardware. This
             amount will be released closer to the event date.
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="top-6 p-4 flex flex-col gap-y-3">
-        <div className="flex flex-col flex-grow bg-white">
-          <h3>How to join our hacking community?</h3>
+        <div className="flex flex-col flex-grow bg-Powderblue">
+          <h3 className="font-bold  text-2xl">How to join our hacking community?</h3>
           <p>
             Join our discord! We will make announcements and can answer any questions there. Make
-            sure to also join our social media to make sure you don’t miss any announcements.
+            sure to also join our social media to make sure you do not miss any announcements.
           </p>
         </div>
       </div>
