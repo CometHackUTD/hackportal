@@ -43,8 +43,8 @@ export default function MemberCards(props) {
         />
       </div>
       {/* Main Body */}
-      <div className="min-h-[4.8rem] bg-[#F2F3FF]"></div>
-      <div className="min-h-[7.2rem] bg-[#C1C8FF] p-4">
+      <div className="min-h-[4.8rem] bg-Honeydew"></div>
+      <div className="min-h-[7.2rem] bg-Honeydew p-4">
         <h1 className="text-lg font-black">{props.name}</h1>
         <p>{props.description}</p>
         <div className="flex justify-left space-x-2 > * + *">

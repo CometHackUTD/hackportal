@@ -44,6 +44,9 @@ module.exports = {
         Lemon: '#C0EB33',
         Imperialred: '#E63946',
       }),
+      backgroundImage: {
+        'hero-pattern': `url(${'/assets/Comet_Hack_Logo.png'})`, // !change
+      },
     },
   },
   variants: {

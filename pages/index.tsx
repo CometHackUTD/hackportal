@@ -150,7 +150,7 @@ export default function Home(props: {
   return (
     <>
       <Head>
-        <title>HackPortal</title> {/* !change */}
+        <title>CometHack</title> {/* !change */}
         <meta name="description" content="A default HackPortal instance" /> {/* !change */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -164,7 +164,7 @@ export default function Home(props: {
         </div>
       )}
       {/* Hero section */}
-      <section className="min-h-screen p-4 bg-Powderblue">
+      <section className="min-h-screen p-4 bg-contain bg-Powderblue">
         <div
           style={{ minHeight: 480 }}
           className="max-w-4xl mx-auto flex flex-col justify-center items-center"
@@ -189,7 +189,7 @@ export default function Home(props: {
             <button
               key={button.text}
               onClick={() => router.push(button.path)}
-              className="max-w-[12rem] w-[12rem] md:max-w-full bg-Honeydew rounded-full py-4"
+              className="max-w-[12rem] w-[12rem] md:max-w-full bg-Celadonblue rounded-full py-4"
             >
               {button.text}
             </button>
@@ -198,6 +198,13 @@ export default function Home(props: {
       </section>
       {/* Video Space */}
       <section className="z-0 relative md:h-[560px] py-[3rem] bg-Powderblue">
+        <div>
+          {' '}
+          <p className="flex flex-col justify-center items-center font-bold text-2xl text-indigo-600 lg:text-5xl">
+            Recap 2021 Comet Hack
+          </p>
+        </div>
+        <br></br>
         <div className="flex flex-col justify-center items-center md:flex-row">
           {/* Video */}
           {/* !change */}
@@ -205,14 +212,14 @@ export default function Home(props: {
             className="video"
             width="700"
             height="400"
-            src="https://www.youtube.com/embed/niFBblrblqo"
+            src="https://www.youtube.com/embed/dSOKnx5_Bvo"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
           {/* Stats */}
-          <div className="">
+          {/* <div className="">
             {stats.map((stat, index) => (
               <div
                 key={stat.data}
@@ -224,33 +231,34 @@ export default function Home(props: {
                 <p className="font-medium text-lg lg:text-3xl">{stat.object}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
-      {/* About section */}
-      <section className="md:p-12 p-6">
-        <h1 className="md:text-4xl text-2xl font-bold my-4">About HackPortal</h1> {/* !change */}
-        <div className="md:text-base text-sm">
-          HackPortal is a platform for user-friendly hackathon event management. <br />
-          <br />A few of its features include: A fully customizable front end, sign in with email/
-          Google, hacker registration, images, challenges, sponsors, FAQ and more fetched from
-          backend, push notifications, a spotlight carousel highlighting ongoing events, QR code
-          check in and swag claims, report submission/ Ask a question, a built-in and easy to set up
-          schedule, Hacker, Admin, and Super Admin roles, an Admin console to send announcements,
-          update user roles, show number of check-ins, swag claims, and more!. <br />
-          <br />
-          To set up HackPortal for your hackathon, check out the{' '}
-          <a
-            href="https://github.com/acmutd/hackportal/blob/develop/docs/set-up.md"
-            className="underline"
-          >
-            HackPortal Github
-          </a>
-          !
+
+      <section className="md:p-12 p-6 bg-Powderblue">
+        <h1 className="text-center md:text-4xl text-2xl font-bold my-4">Comet Hack</h1>{' '}
+        {/* !change */}
+        <div className="top-6 p-4 flex flex-col gap-y-3">
+          <h4 className="font-bold text-2xl">Our Mission Statement</h4>
+          <p>
+            As Future engineers, we are expected to set the pace of technological advancements. Yet
+            we are often lost in space looking for a starting point. Comet Hack is dedicated to
+            providing the resources and opportunities to fuel our innovative spirits and creative
+            ideas.
+          </p>
+        </div>
+        <div className="top-6 p-4 flex flex-col gap-y-3">
+          <h4 className="font-bold text-2xl">What is Comet Hack</h4>
+          <p>
+            Simply hackathons combine the two words: hacking and marathon. Participants will form
+            teams of 1-5 members and bring a project idea to life in 36 hours! Students will receive
+            mentorship, learn about new job opportunities, and compete for a cool prize!
+          </p>
         </div>
       </section>
+
       {/* Featuring Keynotes speakers */}
-      <section className="flex overflow-x-auto bg-gray-200 min-h-[24rem]">
+      <section className="flex overflow-x-auto bg-Celadonblue min-h-[24rem]">
         <div className="flex items-center justify-center font-bold p-6 md:text-4xl text-2xl my-4">
           Featuring Keynote Speakers
         </div>
@@ -296,7 +304,7 @@ export default function Home(props: {
             {challenges.map((challenge, idx) => (
               <div
                 id={`org${idx}`}
-                className={`${idx} relative cursor-pointer text-center md:text-lg sm:text-sm text-xs md:py-6 py-4 my-4 bg-purple-200 rounded-sm`}
+                className={`${idx} relative cursor-pointer text-center md:text-lg sm:text-sm text-xs md:py-6 py-4 my-4 bg-Powderblue rounded-sm`}
                 key={idx}
                 onClick={() => changeOrg(challenge, idx)}
               >
@@ -319,12 +327,12 @@ export default function Home(props: {
         </div>
       </section>
       {/* FAQ */}
-      <section>
+      <section className="bg-Celadonblue">
         <FAQ fetchedFaqs={props.answeredQuestion}></FAQ>
       </section>
       <section>
         {/* Team Members */}
-        <div className="flex flex-col flex-grow bg-white">
+        <div className="flex flex-col flex-grow bg-Prussianblue">
           <div className="my-2">
             <h4 className="font-bold p-6 md:text-4xl text-2xl my-4">Meet Our Team :)</h4>{' '}
             {/* !change */}
@@ -345,13 +353,38 @@ export default function Home(props: {
               )}
             </div>
           </div>
+          <br></br>
+          <br></br>
         </div>
       </section>
-      {/* Sponsors */}
-      <section>
-        <div className="flex flex-col flex-grow bg-white">
+      <section className="md:p-5 p-6 bg-white"></section>
+      <br></br>
+      <section className="md:p-12 p-6 bg-Celadonblue">
+        <h1 className="text-center md:text-4xl text-2xl font-bold my-4">About HackPortal</h1>{' '}
+        {/* !change */}
+        <div className="md:text-base text-sm">
+          HackPortal is a platform for user-friendly hackathon event management. <br />
+          <br />A few of its features include: A fully customizable front end, sign in with email/
+          Google, hacker registration, images, challenges, sponsors, FAQ and more fetched from
+          backend, push notifications, a spotlight carousel highlighting ongoing events, QR code
+          check in and swag claims, report submission/ Ask a question, a built-in and easy to set up
+          schedule, Hacker, Admin, and Super Admin roles, an Admin console to send announcements,
+          update user roles, show number of check-ins, swag claims, and more!. <br />
+          <br />
+          To set up HackPortal for your hackathon, check out the{' '}
+          <a
+            href="https://github.com/acmutd/hackportal/blob/develop/docs/set-up.md"
+            className="underline"
+          >
+            HackPortal Github
+          </a>
+        </div>
+      </section>
+      {/* Sponsors
+      <section className="bg=Powderblue" >
+        <div className="flex flex-col flex-grow">
           <h4 className="font-bold p-6 md:text-4xl text-2xl my-4">Sponsors</h4>
-          {/* Sponsor Card */}
+          {/* Sponsor Card 
           <section className="flex flex-wrap justify-center p-4">
             {sponsor.map(({ link, reference }, idx) => (
               <SponsorCard key={idx} link={link} reference={reference} />
@@ -359,7 +392,7 @@ export default function Home(props: {
           </section>
           <h2 className="my-2 text-center">
             {' '}
-            {/* !change */}
+            {/* !change 
             If you would like to sponsor HackPortal, please reach out to us at&nbsp;
             <a
               href="mailto:email@organization.com"
@@ -371,25 +404,24 @@ export default function Home(props: {
             </a>
           </h2>
         </div>
-      </section>
-
+      </section> */}
       {/* Footer */}
-      <section className="bg-gray-100 mt-16 px-6 py-8 md:text-base text-xs">
+      <section className="mt-16 px-6 py-8 md:text-base text-xs bg-Powderblue">
         {/* Upper Content */}
         <div className="my-2 relative">
           {/* Social icons */} {/* !change */}
           <div className="space-x-4 > * + *">
-            <a href="https://twitter.com/hackutd" rel="noopener noreferrer" target="_blank">
+            {/* <a href="https://twitter.com/hackutd" rel="noopener noreferrer" target="_blank">
               <TwitterIcon className="footerIcon" />
-            </a>
+            </a> */}
             <a
-              href="https://www.instagram.com/hackutd/?hl=en"
+              href="https://www.instagram.com/comet_hack?igshid=YmMyMTA2M2Y="
               rel="noopener noreferrer"
               target="_blank"
             >
               <InstagramIcon className="footerIcon" />
             </a>
-            <a href="https://www.facebook.com/hackutd/" rel="noopener noreferrer" target="_blank">
+            <a href="https://www.facebook.com/CometHack/" rel="noopener noreferrer" target="_blank">
               <FacebookIcon className="footerIcon" />
             </a>
           </div>
@@ -397,9 +429,9 @@ export default function Home(props: {
           <div className="absolute bottom-0 right-0">
             {' '}
             {/* !change */}
-            Checkout HackUTD&apos;s{' '}
+            Checkout CometHacks &apos;s{' '}
             <a
-              href="https://acmutd.co/"
+              href="https://comethack.org/"
               rel="noopener noreferrer"
               target="_blank"
               className="font-black hover:underline"
@@ -411,7 +443,7 @@ export default function Home(props: {
         {/* Lower Content */}
         <div className="flex justify-between border-t-[1px] py-2 border-black">
           <p>
-            Designed by <p className="font-black inline">HackUTD</p> <br /> {/* !change */}
+            Designed by <p className="font-black inline">CometHack</p> <br /> {/* !change */}
             {/* PLEASE DO NOT CHANGE <3 */}
             HackPortal developed with &lt;3 by <p className="font-black inline">HackUTD</p> and{' '}
             <p className="font-black inline">ACM Development</p>
@@ -421,7 +453,7 @@ export default function Home(props: {
           <div className="flex md:flex-row flex-col md:ml-0 ml-6">
             {/* !change */}
             <a
-              href="mailto:email@organization.com"
+              href="mailto: comethack21@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
               className="hover:underline md:mr-8 font-thin"
@@ -430,7 +462,7 @@ export default function Home(props: {
             </a>
             {/* !change */}
             <a
-              href="https://github.com/acmutd/hackportal"
+              href="https://github.com/CometHackUTD/hackportal"
               target="_blank"
               rel="noreferrer"
               className="hover:underline font-thin whitespace-nowrap"
