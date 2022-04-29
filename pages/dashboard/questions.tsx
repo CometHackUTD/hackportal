@@ -155,7 +155,7 @@ export default function QuestionsPage() {
     );
 
   return (
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col flex-grow bg-Powderblue">
       <Head>
         <title>HackPortal - Questions</title> {/* !change */}
         <meta name="description" content="HackPortal's Quesiton and Answer Page " /> {/* !change */}

@@ -9,11 +9,10 @@ import 'firebase/messaging';
 import 'firebase/storage';
 import KeynoteSpeaker from '../components/KeynoteSpeaker';
 import HomeChallengeCard from '../components/HomeChallengeCard';
-import Image from 'public/CometHackLogos/Comet_Hack_Logo.png';
 import MemberCards from '../components/MemberCards';
-import SponsorCard from '../components/SponsorCard';
+// import SponsorCard from '../components/SponsorCard';
 import FAQ from '../components/faq';
-import TwitterIcon from '@mui/icons-material/Twitter';
+// import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -184,7 +183,7 @@ export default function Home(props: {
           </div>
           {/* TODO: Programmatically show these based on configured times/organizer preference */}
         </div>
-        <div className="flex flex-col items-center md:flex-row md:justify-around px-4 md:space-y-0 space-y-3 > * + *">
+        {/* <div className="flex flex-col items-center md:flex-row md:justify-around px-4 md:space-y-0 space-y-3 > * + *">
           {buttonDatas.map((button) => (
             <button
               key={button.text}
@@ -194,7 +193,7 @@ export default function Home(props: {
               {button.text}
             </button>
           ))}
-        </div>
+        </div> */}
       </section>
       {/* Video Space */}
       <section className="z-0 relative md:h-[560px] py-[3rem] bg-Powderblue">
