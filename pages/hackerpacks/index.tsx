@@ -49,15 +49,15 @@ export default function HackerPack() {
             <li>
               General
               <ul className="pl-4">
-                <li>
+                {/* <li>
                   <a href="#Subsection1">Food</a>
                 </li>
                 <li>
                   <a href="#Subsection2">Mentors</a>
-                </li>
+                </li> */}
               </ul>
             </li>
-            <li>
+            {/* <li>
               Tech Workshop Packs
               <ul className="pl-4">
                 <li>
@@ -73,8 +73,8 @@ export default function HackerPack() {
                   <a href="#Subsection6">Name of Workshop</a>
                 </li>
               </ul>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               Comm Workshop Packs
               <ul className="pl-4">
                 <li>
@@ -90,8 +90,8 @@ export default function HackerPack() {
                   <a href="">Name of Workshop</a>
                 </li>
               </ul>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               Sponsor Workshop Packs
               <ul className="pl-4">
                 <li>
@@ -107,7 +107,7 @@ export default function HackerPack() {
                   <a href="">Name of Workshop</a>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </section>
         {/* User greeting for bottom of sidebar */}
@@ -121,10 +121,10 @@ export default function HackerPack() {
       </section>
 
       {/* Main content section */}
-      <section id="mainContent" className="px-6 py-3 w-3/4 md:wd-5/6 2xl:w-7/8">
-        <div className="font-bold text-2xl md:text-4xl lg-text-6xl">Big Heading</div>
+      <section id="mainContent" className="px-6 py-3 w-3/4 md:wd-5/6 2xl:w-7/8 bg-Powderblue">
+        {/* <div className="font-bold text-2xl md:text-4xl lg-text-6xl">Comet Hack</div> */}
 
-        {/* Document links */}
+        {/* Document links
         <section id="docLinks" className="bg-gray-200 rounded-lg my-6 p-5 w-5/6">
           Linked Documents:
           <div className="flex flex-wrap grid grid-cols-2 lg:grid-cols-3 ">
@@ -159,35 +159,37 @@ export default function HackerPack() {
               title="An Essay for Comm"
             />
           </div>
-        </section>
+        </section> */}
 
         {/* Section 1 */}
         <div id="Subsection1" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">SubHeading 1</div>
+          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">
+            Welcome to Comet Hack!
+          </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Morbi tempus iaculis urna id volutpat lacus
-            laoreet non curabitur. Eget aliquet nibh praesent tristique. In est ante in nibh mauris.
-            Imperdiet dui accumsan sit amet nulla facilisi morbi. Sed pulvinar proin gravida
-            hendrerit lectus a.
-          </p>
-          <p>
-            <br></br>Cursus mattis molestie a iaculis at. Fusce ut placerat orci nulla pellentesque
-            dignissim enim sit amet. Placerat orci nulla pellentesque dignissim enim sit amet
-            venenatis. Dolor magna eget est lorem ipsum dolor sit.
+            Welcome to our Hacker Guide! We are so excited that you are hacking with us on April
+            29th-May 1st! Comet Hack is a 36 hour hardware hackathon as part of the IEEE UT Dallas
+            student branch. We are so excited about what Comet Hack has to offer to the students at
+            The University of Texas at Dallas! As future engineers we are expected to set the pace
+            of technological advancements. Yet, we are often lost in space ooking for a starting
+            point. Comet Hack is dedicated to providing the resources and opportunities to fuel our
+            innovative spirits and creative ideas. Participants will get the chance to form teams of
+            up to 1-5 members, and bring a project idea to life! However, they only have 36 hours to
+            accomplish this. Students will receive mentorship, learn about new job opportunities,
+            and compete for some cool prizes!
           </p>
         </div>
         {/* Section 2 */}
         <div id="Subsection2" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">SubHeading 2</div>
-          <div className="flex grid grid-cols-2 gap-x-4 ">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et eu et vitae, in quis metus
-              quam integer et. Luctus elit cursus a habitasse velit. Egestas nisi, vel, sodales
-              proin vitae quam aenean ullamcorper. Fames enim nunc augue velit nunc neque, fermentum
-              odio elementum.
-            </p>
-            <p>
+          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">Mentors</div>
+          {/* <div className="flex grid grid-cols-2 gap-x-4 "> */}
+          <p>
+            If you have any questions throughout the hackathon you are more than welcome to reach
+            out to any of the members and ask for help we will also be available through discord to
+            answer any questions. We will have several different motors/components available to
+            checkout in case it is necessary for projects.
+          </p>
+          {/* <p>
               Luctus elit cursus a habitasse velit. Egestas nisi, vel, sodales proin vitae quam
               aenean ullamcorper. Fames enim nunc augue velit nunc neque, fermentum odio elementum.
               <ul className="list-disc list-inside">
@@ -196,22 +198,44 @@ export default function HackerPack() {
                 <li>Egestas nisi</li>
                 <li>Vel Sodales proin vitae</li>
               </ul>
-            </p>
-          </div>
+            </p> */}
+          {/* </div> */}
         </div>
         {/* Section 3 */}
         <div id="Subsection3" className="my-7">
-          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">SubHeading 3</div>
+          <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">Project Submissions</div>
           <p>
-            Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Mauris nunc congue nisi
-            vitae suscipit. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.
-            Mi proin sed libero enim sed. Sit amet nisl suscipit adipiscing bibendum. Enim sit amet
-            venenatis urna cursus eget. Est lorem ipsum dolor sit amet consectetur adipiscing elit
-            pellentesque. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum
-            arcu. Enim nulla aliquet porttitor lacus luctus accumsan tortor.
+            1. All projects will be submitted through DevPost, project should include.
+            <li>A Project Description stating what the project is and what problem it solves.</li>
+            <li>A 2-3 minute long Demo Video showcasing your project. </li>
+            <li>
+              Any URL Links needed to view the project such as domain URLs and GitHub links to view
+              any source code.
+            </li>
           </p>
+          <p>
+            2. Teams should be made up of 1-3 students or recent graduates who are not organizers,
+            volunteers, or sponsors{' '}
+          </p>
+          <p>
+            3. All team members should be present during the weekend in order to be considered part
+            of the team and eligible for any team prizes.{' '}
+          </p>
+          <p>
+            4. Teams can obtain advice from organizers, volunteers, and sponsors but all work should
+            be done during the hackathon hours.{' '}
+          </p>
+          <p>
+            5. Teams can work on an idea they have worked on prior to Comet Hack weekend as long as
+            no code is reused.
+          </p>
+          <p>
+            6. Teams may use libraries, frameworks, and open source codes in projects and all coding
+            must stop when the hackathon ends.
+          </p>
+          <p>7. Everyone should follow the code of conduct in the Discord server</p>
         </div>
-        {/* Section 4 */}
+        {/* Section 4
         <div id="Subsection4" className="my-7">
           <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">SubHeading 4</div>
           <p>
@@ -224,7 +248,7 @@ export default function HackerPack() {
           </p>
         </div>
         {/* Section 5 */}
-        <div id="Subsection5" className="my-7">
+        {/* <div id="Subsection5" className="my-7">
           <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">SubHeading 5</div>
           <div>
             <p>
@@ -241,9 +265,9 @@ export default function HackerPack() {
               </ul>
             </p>
           </div>
-        </div>
+        </div> */}
         {/* Section 6 */}
-        <div id="Subsection6" className="my-7">
+        {/* <div id="Subsection6" className="my-7">
           <div className="font-bold text-lg md:text-xl lg:text-3xl mb-4">SubHeading 6</div>
           <div className="flex grid grid-cols-2 gap-x-4 ">
             <p>
@@ -257,8 +281,8 @@ export default function HackerPack() {
               iaculis at. Ipsum dolor sit amet consectetur adipiscing elit duis. Integer vitae justo
               eget magna fermentum. Leo in vitae turpis massa sed elementum tempus.
             </p>
-          </div>
-        </div>
+      </div> */}
+        {/* </div> */}
       </section>
     </div>
   );
