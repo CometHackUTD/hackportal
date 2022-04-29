@@ -175,9 +175,9 @@ export default function Home(props: {
             <h1 className="text-center md:text-6xl text-3xl md:font-black font-bold">
               Comet Hack Portal
             </h1>
-            <p className="text-center my-4 md:font-bold md:text-3xl text-xl">
+            {/* <p className="text-center my-4 md:font-bold md:text-3xl text-xl">
               A Project by Comet Hack & IEEE
-            </p>
+            </p> */}
             {/* <img src= {window.location.origin + 'C:\Users\13168\Documents\GitHub\CometHackHackPortal\public\CometHackLogos.png'} height = {100}></img> */}
             {/* <img src={Image} height={450}></img> */}
           </div>
