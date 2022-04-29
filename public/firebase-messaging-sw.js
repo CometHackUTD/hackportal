@@ -6,13 +6,13 @@ importScripts('https://www.gstatic.com/firebasejs/8.9.0/firebase-messaging.js');
 
 function setup() {
     firebase.initializeApp({
-      apiKey: "AIzaSyCEhWNvn1d6-OfqvmGiDW9X1BlwNo8qBsM",
-      authDomain: "acmutd-hackportal-dev.firebaseapp.com",
-      projectId: "acmutd-hackportal-dev",
-      storageBucket: "acmutd-hackportal-dev.appspot.com",
-      messagingSenderId: "774212472252",
-      appId: "1:774212472252:web:273c09e0cb085059b6afb9",
-      measurementId: "G-HHBS9T3R9E"
+      apiKey: "AIzaSyBtW-4cwMOMyhP8x1e8mxtaZCM-HjUTa8o",
+      authDomain: "comethackportal.firebaseapp.com",
+      projectId: "comethackportal",
+      storageBucket: "comethackportal.appspot.com",
+      messagingSenderId: "529336569590",
+      appId: "1:529336569590:web:fa233d5caf3900e41866d7",
+      measurementId: "G-6WDSC83CQ9"
     });
     
   const messaging = firebase.messaging();
